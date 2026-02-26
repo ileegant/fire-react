@@ -3,6 +3,8 @@ interface FinancialInputProps {
   id: string;
   unit: string;
   helperText: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
 }
 
@@ -11,6 +13,8 @@ export default function FinancialInput({
   id,
   unit,
   helperText,
+  value,
+  onChange,
   placeholder,
 }: FinancialInputProps) {
   return (
@@ -19,6 +23,8 @@ export default function FinancialInput({
       <div>
         <input
           id={id}
+          value={value}
+          onChange={onChange}
           placeholder={placeholder}
           className="text-sm bg-neutral-900 border border-neutral-500 rounded-sm w-30 p-1 focus:border-neutral-100 focus:bg-neutral-800 focus:outline-none"
         />
