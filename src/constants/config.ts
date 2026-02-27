@@ -21,12 +21,4 @@ export const BOND_INPUTS = [
     helperText: "Your expected yearly return before taxes.",
     placeholder: "16.5",
   },
-  {
-    id: "investment-term",
-    label: "Investment Term",
-    unit: "months",
-    helperText:
-      "Time remaining until the government repays the full face value.",
-    placeholder: "12",
-  },
 ];
